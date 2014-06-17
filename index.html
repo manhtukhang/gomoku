@@ -3,16 +3,16 @@
 <head>
 	<meta charset="utf-8">
 	<meta name = "viewport" content = "user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
-	<link rel="apple-touch-icon" href="images/icon.png"/>
-	<link rel="icon" type="image/png" href="images/icon.png" />
+	<!-- <meta name="apple-mobile-web-app-capable" content="yes"> -->
+	<!-- <meta name="apple-mobile-web-app-status-bar-style" content="black" /> -->
+	<!-- <link rel="apple-touch-icon" href="images/icon.png"/> -->
+	<!-- <link rel="icon" type="image/png" href="images/icon.png" /> -->
 	<!-- <link rel="apple-touch-startup-image" media="(min-device-width: 768px) and (orientation: portrait)" href="images/splash_iPad_portrait.png" /> -->
 	<!-- <link rel="apple-touch-startup-image" media="(min-device-width: 768px) and (orientation: landscape)" href="images/splash_iPad_landscape.png" /> -->
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-	<title>Caro</title>
+	<title>Caro - tên gọi khác của trò chơi Gomoku Nhật Bản</title>
 
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
 	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
@@ -38,7 +38,7 @@
 <div data-role='page' data-theme='w' id='game-page' class='no-background'>
 	<div data-role='content' class='center no-padding'>
 		<div id='game-region'>
-			<header class='game-ult'>Caro<br><br><br>Phiên bản dành riêng cho <br> Quyền Trân sociu</header>
+			<header class='game-ult'>Caro</header>
 			<div id='game-info' class='game-ult ui-bar ui-bar-e'>
 				<span class='go black'></span>
 				<span class='cont'>Lượt của bạn.</span>
@@ -81,7 +81,7 @@
 </div>
 <div id='new-game'  data-theme='e' data-role='dialog' class='long-dialog'>
 	<div data-role='header'>
-		<h4>Caro</h4>
+		<h4>Caro - Trò chơi mới</h4>
 	</div>
 	<div data-role='content'>
 		<fieldset data-role="controlgroup"  data-theme='e' id='mode-select'>
@@ -94,7 +94,7 @@
 		</fieldset> 
 		
 		<fieldset data-role="controlgroup" data-theme='e' id='color-select' class='vs-computer'>
-			<legend>Chọn màu</legend>
+			<legend>Chọn bên</legend>
 				<input type="radio" name="radio-choice-1" id="radio-choice-2" value="black" data-theme='a'  />
 				<label for="radio-choice-2">Đen</label>
 				
@@ -127,9 +127,18 @@
 		<h4>Thông tin</h4>
 	</div>
 	<div data-role='content' class='thin-content'>
-		<p>Caro - tên gọi khác của <a href='http://vi.wikipedia.org/wiki/C%E1%BB%9D_ca-r%C3%B4'>Gomoku</a> Nhật Bản.</p> 
-		<p>Phiên bản thử nghiệm dành cho Quyền Trân sociu</p>
-		<p>Anh yêu em nhiềuuuuuu lắmmmmm <3 </p>
+		<p>Cờ Caro - tên gọi khác của trò chơi <a href='http://vi.wikipedia.org/wiki/C%E1%BB%9D_ca-r%C3%B4'>Gomoku</a> Nhật Bản<br>
+			Sử dụng các công cụ sau:<br>
+			+ <a href='http://www.w3.org/TR/html5'>HTML5</a><br>
+			+ <a href='http://www.w3.org/Style/CSS'>CSS3</a><br>
+			+ <a href='http://jquerymobile.com'>jQuery Mobile</a><br>
+			<br>
+			Tác giả:<br>
+			Khang Mạnh Tử (email: <a href='mailto:manhtuvjp@gmail.com'>manhtuvjp@gmail.com</a>)<br>
+			Nguyễn Văn Diện (email: <a href='mailto:binkyoable@gmail.com'>binkyoable@gmail.com</a>)<br>
+			<br>
+			Xem mã nguồn và đóng góp ý kiến <a href='https://github.com/manhtuvjp/caro'>tại đây</a>
+		</p>
 	</div>
 </div>
 </body>
