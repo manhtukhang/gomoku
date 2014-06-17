@@ -1,0 +1,47 @@
+/*Nút bình thường*/
+.ui-btn-up-w
+{
+	border: 1px solid #c27426;
+	color: #ffffff;
+	font-weight: bold;
+	text-shadow: 0 1px 1px #444444;
+}
+
+/*Nút khi đưa chuột lên*/
+.ui-btn-hover-w
+{
+	background: #DF852B;
+	background-image: linear-gradient( #F5922F,#C87726 );
+	background-image: -moz-linear-gradient( #F5922F,#C87726 );
+	background-image: -ms-linear-gradient( #F5922F,#C87726 );
+	background-image: -o-linear-gradient( #F5922F,#C87726 );
+	background-image: -webkit-gradient(linear,left top,left bottom,from( #F5922F ),to( #C87726 ));
+	background-image: -webkit-linear-gradient( #F5922F,#C87726 );
+	border: 1px solid #DF852B;
+	color: #ffffff;
+	font-weight: bold;
+	text-shadow: 0 1px 1px #444444;
+}
+
+/*Nút khi nhấn chuột*/
+.ui-btn-down-w
+{
+	background: #DF852B;
+	background-image: linear-gradient( #C87726,#F5922F );
+	background-image: -moz-linear-gradient( #C87726,#F5922F );
+	background-image: -ms-linear-gradient( #C87726,#F5922F );
+	background-image: -o-linear-gradient( #C87726,#F5922F );
+	background-image: -webkit-gradient(linear,left top,left bottom,from( #C87726 ),to( #F5922F ));
+	background-image: -webkit-linear-gradient( #C87726,#F5922F );
+	border: 1px solid #DF852B;
+	color: #ffffff;
+	font-weight: bold;
+	text-shadow: 0 1px 1px #444444;
+}
+
+/*Chữ hiển thị trên nút*/
+.ui-btn-up-w,.ui-btn-hover-w,.ui-btn-down-w
+{
+	font-family: Helvetica,Arial,sans-serif;
+	text-decoration: none;
+}
