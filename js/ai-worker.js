@@ -173,9 +173,6 @@ ai._updateMap=function(r,c,num,remove){
             x=r;
             y=c;
             step=5;
-            //others 0 i am 1-> sc=0
-            //others 0 i am more than 1-> sc=1
-            //i am >0 others >0 -> sc=-1
             while( step-- && x>=0 && y>=0 && y<15 ){
                 xx=x-moves[i][0]*4;
                 yy=y-moves[i][1]*4;
@@ -211,7 +208,6 @@ ai._updateMap=function(r,c,num,remove){
                     changes+=s*cur[3];
                     while( tmp-- ){
                         this.map[xx][yy].score+=s;
-                        //if(!this.map[xx][yy].set)changes+=s*cur[3];
                         xx-=moves[i][0];
                         yy-=moves[i][1];
                     }
@@ -225,7 +221,6 @@ ai._updateMap=function(r,c,num,remove){
                     changes+=s*cur[3];
                     while( tmp-- ){
                         this.map[xx][yy].score+=s;
-                        //if(!this.map[xx][yy].set)changes+=s*cur[3];
                         xx-=moves[i][0];
                         yy-=moves[i][1];
                     }

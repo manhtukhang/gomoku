@@ -1,5 +1,5 @@
 function Place(r, c, board){
-    // a place for go on the board
+    // Vị trí để đi các quân cờ trên bàn cờ
     var elm = this.elm = document.createElement("div");
     elm.className = "go-place";
     var s = elm.style;
@@ -248,7 +248,7 @@ var Board = function(boardElm, backgroundElm){
                 for(var i = 0; i < 4; i++){
                     map[num][i][r][c] = 1;
                     updateWarning(r, c, num, i);
-                    //coefficient
+                    // Tọa độ
                     for(var coe= -1; coe < 2; coe += 2){
                         var x = r, y = c,len = 0;
                         do{
@@ -278,7 +278,7 @@ var Board = function(boardElm, backgroundElm){
             }
         }else{
             for(var i = 0; i < 4; i++)for(var coe =- 1; coe < 2; coe += 2){
-                //update for the current color
+                // Cập nhật màu hiện tại
                 var x = r, y = c;
                 do{
                     x += moves[i][0] * coe;
@@ -295,7 +295,7 @@ var Board = function(boardElm, backgroundElm){
                     map[num][i][x][y] += cont;
                     updateWarning(x, y, num, i);
                 }
-                //update for the other color
+                // Cập nhật màu còn lại
                 x = r;
                 y = c;
                 do{

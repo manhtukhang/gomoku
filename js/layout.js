@@ -1,5 +1,4 @@
 function adjustSizeGen(){
-    var smallScreen = navigator.userAgent.toLowerCase().match(/(iphone|ipod)/);
 
     var gameRegion = $("#game-region"),
         tds = $('.board td'),
@@ -17,16 +16,6 @@ function adjustSizeGen(){
             vspace = Math.min(h - 150, w),
             hspace = Math.min(w - 320, h - 40),
             hsize;
-
-        if(smallScreen){
-            if(avaih > avaiw){
-                vspace = avaiw;
-                hspace = 0;
-            }else{
-                hspace = avaih - 40;
-                vspace = 0;
-            }
-        }
 
         if(vspace > hspace){
             hsize = Math.min(~~((vspace - 15) / 15 / 2), ~~((avaiw - 22) / 15 / 2));
